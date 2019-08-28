@@ -28,7 +28,7 @@ vars:
 chain:
   -
     name: "run_instance"
-    ref: "aws_bot.boto3action"
+    ref: "aws_boto3.boto3action"
     params:
       service: "ec2"
       action_name: "run_instances"
@@ -37,7 +37,7 @@ chain:
     on-success: "wait_for_instance"
   -
     name: "wait_for_instance"
-    ref: "aws_bot.waiter"
+    ref: "aws_boto3.waiter"
     params:
       service: "ec2"
       waiter_name: "instance_running"
@@ -48,7 +48,7 @@ chain:
     on-success: "add_tags"
   -
     name: "add_tags"
-    ref: "aws_bot.boto3action"
+    ref: "aws_boto3.boto3action"
     params:
       service: "ec2"
       action_name: "create_tags"

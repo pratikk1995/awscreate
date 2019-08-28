@@ -1,6 +1,6 @@
 ---
-ref: aws_bot
-name : aws1222
+ref: aws_boto3
+name : aws_boto3
 description : AWS actions using boto3
 keywords:
   - aws
@@ -18,6 +18,8 @@ keywords:
   - CloudFormation
   - RDS
   - SQS
+  - Angaj_aws
+  - pratikk_aws
   - lambda
 
 version : 0.7.3

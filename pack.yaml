@@ -1,6 +1,6 @@
 ---
-ref: aws_boto3
-name : aws_boto3
+ref: aws_bot
+name : aws1222
 description : AWS actions using boto3
 keywords:
   - aws
